@@ -1,0 +1,13 @@
+:root { --paper:#f6f1e4; --ink:#22252b; --line:#bcd2ea; --margin:#e46b6b; --teal:#3a9e92; --orange:#e9822f; }
+@media (prefers-color-scheme: dark) { :root { --paper:#1e2024; --ink:#ecebe6; --line:#2b3a4a; --margin:#a04848; --teal:#5cc4b6; } }
+* { box-sizing: border-box; }
+body { margin:0; background: var(--paper); color: var(--ink); font: 17px/1.6 "Marker Felt", "Chalkboard SE", "Comic Sans MS", system-ui, sans-serif;
+  background-image: repeating-linear-gradient(to bottom, transparent 0 31px, var(--line) 31px 32px); }
+main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px 56px; border-left: 2px solid var(--margin); min-height: 100vh; }
+h1 { font-size: 44px; margin: 0 0 4px; color: var(--teal); transform: rotate(-2deg); display:inline-block; text-shadow: 3px 3px 0 var(--ink); }
+h2 { margin-top: 32px; }
+a { color: var(--teal); }
+.tag { font-size: 20px; margin: 0 0 24px; }
+.card { border: 2.5px solid var(--ink); border-radius: 14px 18px 12px 16px; padding: 14px 18px; margin: 16px 0; background: color-mix(in srgb, var(--paper) 85%, white); }
+nav a { margin-right: 16px; }
+small { opacity: .7; }
